@@ -1,4 +1,4 @@
-# ☁ Cloud Cybersecurity Homelab
+# ☁ Cloud Homelab
 Deploy an attack/defend cybersecurity homelab.
 
 # Topology 

@@ -160,7 +160,7 @@ resource "aws_security_group" "linux-security-tools" {
 
 # Create Windows Instance.
 resource "aws_instance" "windows" {
-  ami = "ami-060b1c20c93e475fd"
+  ami = "ami-0258aac7f0f62500f"
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.public_subnet.id}"
 

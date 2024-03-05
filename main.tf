@@ -161,7 +161,7 @@ resource "aws_security_group" "linux-security-tools" {
 # Create Windows Instance.
 resource "aws_instance" "windows" {
   ami = "ami-0258aac7f0f62500f"
-  instance_type = "t2.micro"
+  instance_type = "t3.large"
   subnet_id = "${aws_subnet.public_subnet.id}"
 
   key_name = var.aws-key
@@ -182,7 +182,7 @@ resource "aws_instance" "windows" {
 # Crate Kali Attacker Instance.
 resource "aws_instance" "kali" {
   ami = "ami-000f5686e34169e70" 
-  instance_type = "t2.micro"
+  instance_type = "t3.large"
   subnet_id = "${aws_subnet.public_subnet.id}"
 
   key_name = var.aws-key

@@ -181,7 +181,7 @@ resource "aws_instance" "windows" {
 
 # Crate Kali Attacker Instance.
 resource "aws_instance" "kali" {
-  ami = "ami-0b02670313196539c" 
+  ami = "ami-000f5686e34169e70" 
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.public_subnet.id}"
 
@@ -202,7 +202,7 @@ resource "aws_instance" "kali" {
 
 # Create Security Tools Instance.
 resource "aws_instance" "security-tools" {
-  ami = "ami-0901bbd9d6e996fb7"
+  ami = "ami-0fb2b37d0bb24d154"
   instance_type = "t3.large"
   subnet_id = "${aws_subnet.public_subnet.id}"
 
